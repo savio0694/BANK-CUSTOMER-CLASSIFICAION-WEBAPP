@@ -19,7 +19,7 @@ bankdata=pd.read_csv('bank.csv',sep=',')
 VAL=0
 VAL1=0
 
-
+#--------------CREATE MODEL---SCALE-BALANCE CLASSES------------#
 def make_model(bankdata):
     final_data_features=bankdata.iloc[:,[0,1,3,4]]
     final_data_target=bankdata.iloc[:,[2]]
@@ -38,11 +38,11 @@ def make_model(bankdata):
     RF=Pipeline([('PR',pre_process),('DECISON_TREE',RandomForestClassifier(random_state=0))])
 
     RF_MODEL=RF.fit(X_SMOTE,y_SMOTE)
-    #PREDICTION=RF_MODEL.predict(test_frame)
+    
      
     return RF_MODEL
 
-#LAYOUT
+#---------------------LAYOUT----------------------------#
 
 st.title('CUSTOMER CLASSIFICATION')
 
@@ -52,7 +52,7 @@ on phone calls. Often, more than one contact to the same client
 was required, in order to access if the product (bank term deposit) 
 would be ('yes') or not ('no') subscribed.''')
 
-st.subheader('To view the entire dataset with the original features,EDA,feature selecion etc. view the jupyter noetebook on Github.')
+st.subheader('To view the entire dataset with the original features,EDA,feature selecion,Adjustments forClass imbalance etc. view the jupyter noetebook on Github.')
 
 
 
@@ -83,8 +83,10 @@ age = st.sidebar.slider('How old is the customer', 18, 100, 25)
 
 balance= st.sidebar.slider('What is the customer balance?', -500, 2000, 250)
 
-#LAYOUT
-     
+#---------------LAYOUT-------------------------------#
+
+
+#--------------MAKE-TEST_DATAFRAME-------------#     
 def make_frame(VAL,VAL1,age,balance):
       data={"housing_loan" : VAL, 
       "personal_loan" : VAL1, 
@@ -97,10 +99,13 @@ def make_frame(VAL,VAL1,age,balance):
 
 df = make_frame(VAL,VAL1,age,balance)
 
-#PREDICTION=make_model(bankdata,df)
+
 
 MODEL=make_model(bankdata)
 PREDICTION=MODEL.predict(df)
+
+
+#---FINAL DECISION-------#
 def final_decision(PREDICTION):
     if PREDICTION[0]==0:
        return " The customer is UNLIKELY to have a TERM DEPOSIT"
