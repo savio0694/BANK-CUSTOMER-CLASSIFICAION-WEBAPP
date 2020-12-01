@@ -1,4 +1,4 @@
-# BANK-CUSOOMER-CLASSIFICAION-WEBAPP
+# BANK-CUSTOMER-CLASSIFICATION-WEBAPP
 
 Data Set Information:
 
@@ -8,6 +8,8 @@ The data cleaning, exploratory data analysis, feature selection,model selection 
 
  The goal is to predict whether a customer will subscribe to a term deposit.Here a Random forest model was found most suitable.
 
- The web-app was built using the sreamlit (https://www.streamlit.io/) framework ,the code for which is in the app.py file. .The link to the webpage is below:
+ The web-app was built using the sreamlit (https://www.streamlit.io/) framework ,the code for which is in the app.py file.
 
- https://customer-classificaion.herokuapp.com/ (SAFARI,CHROME,EDGE)
+ **The link to the webpage is below:**
+
+** https://customer-classificaion.herokuapp.com/** (SAFARI,CHROME,EDGE)
