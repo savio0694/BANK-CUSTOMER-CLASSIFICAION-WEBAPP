@@ -24,12 +24,7 @@ VAL=0
 VAL1=0
 
 
-#----IMAGES----#
-im1 = Image.open("assets/images/Capture1.png")
-im2 = Image.open("assets/images/Capture2.png")
-im3 = Image.open("assets/images/Capture3.png")
-im5 = Image.open("assets/images/Capture5.png")
-#--------------#
+
 
 #--------------CREATE MODEL---SCALE-BALANCE CLASSES------------#
 def make_model(bankdata):
