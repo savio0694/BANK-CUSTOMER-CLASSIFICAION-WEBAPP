@@ -69,12 +69,12 @@ st.dataframe(bankdata1.head(10))
 
 
 st.subheader('The raw data is initially kept in the in folder of an amazon S3 bucket,Amazon S3 is a simple web services interface that you can use to store and retrieve any amount of data, at any time, from anywhere on the web.')
-st.image('Capture2.png')
+st.image('https://github.com/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/Capture2.PNG?raw=true')
 
 st.subheader('The raw data is read and transformed using AWS GLUE,AWS Glue is a serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development.')
 
-st.image('Capture3.png')
-st.image('Capture1.png')
+st.image('https://github.com/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/Capture3.PNG?raw=true')
+st.image('https://github.com/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/Capture1.PNG?raw=true')
 
 st.subheader('We create a crawler to crawl the s3 bucket and define an ETL job to run our extrac,transform,load SPARK script given below.Apache Spark is a unified analytics engine for big data processing, with built-in modules for streaming, SQL, machine learning and graph processing.')
 
@@ -152,7 +152,7 @@ format = "csv"
 )
 
 st.subheader('The spark program creates he output file in the out folder in S3')
-st.image('Capture5.png')
+st.image('https://github.com/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/Capture5.PNG?raw=true')
 
 
 st.text('I will not access the file directly from S3 so as to avoid sharing my aws keys publicly,instead I have downloaded the file.')
