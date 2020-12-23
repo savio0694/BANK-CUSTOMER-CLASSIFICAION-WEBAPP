@@ -25,10 +25,10 @@ VAL1=0
 
 
 #----IMAGES----#
-im1 = Image.open("img/Capture1.png")
-im2 = Image.open("img/Capture2.png")
-im3 = Image.open("img/Capture3.png")
-im5 = Image.open("img/Capture5.png")
+im1 = Image.open("assets/images/Capture1.png")
+im2 = Image.open("assets/images/Capture2.png")
+im3 = Image.open("assets/images/Capture3.png")
+im5 = Image.open("assets/images/Capture5.png")
 #--------------#
 
 #--------------CREATE MODEL---SCALE-BALANCE CLASSES------------#
