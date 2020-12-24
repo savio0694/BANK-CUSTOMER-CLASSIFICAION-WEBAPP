@@ -72,7 +72,7 @@ st.subheader('The raw data is initially kept in the in folder of an amazon S3 bu
 st.image('https://github.com/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/images/Capture2.PNG?raw=true')
 
 st.subheader('The raw data is read and transformed using AWS GLUE,AWS Glue is a serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development.')
-st.image('https://github.com/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/images/Capture6.PNG?raw=true')
+st.image('https://github.com/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/images/Capture6.png?raw=true')
 
 st.image('https://github.com/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/images/Capture3.PNG?raw=true')
 st.image('https://github.com/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/images/Capture1.PNG?raw=true')
