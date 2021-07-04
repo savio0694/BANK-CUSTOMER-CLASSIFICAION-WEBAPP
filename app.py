@@ -62,7 +62,7 @@ would be ('yes') or not ('no') subscribed.''')
 
 
 st.subheader('*To view the entire dataset with the original features,Exploratory data analysis,feature selecion,Adjustments forClass imbalance etc. view the')
-components.html("""<a href="https://nbviewer.jupyter.org/github/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/customer-classification.ipynb">JUPYTER NOTEBOOK</a> """)
+components.html("""<a href="https://nbviewer.jupyter.org/github/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/customer-classification.ipynb" target="_blank">JUPYTER NOTEBOOK</a> """)
 
 
 st.text('')
