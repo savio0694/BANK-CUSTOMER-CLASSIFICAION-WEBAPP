@@ -63,7 +63,7 @@ components.html(
     """
 <a href="https://www.w3schools.com">Visit W3Schools.com!</a> """)
 
-st.subheader('*To view the entire dataset with the original features,Exploratory data analysis,feature selecion,Adjustments forClass imbalance etc. view the jupyter noetebook on Github.')
+st.subheader('*To view the entire dataset with the original features,Exploratory data analysis,feature selecion,Adjustments forClass imbalance etc. view the jupyter notebook on Github.')
 
 st.text('')
 
