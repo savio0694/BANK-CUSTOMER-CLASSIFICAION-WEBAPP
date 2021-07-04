@@ -59,6 +59,9 @@ Portuguese banking institution. The marketing campaigns were based
 on phone calls. Often, more than one contact to the same client
 was required, in order to access if the product (bank term deposit)
 would be ('yes') or not ('no') subscribed.''')
+components.html(
+    """
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a> """)
 
 st.subheader('*To view the entire dataset with the original features,Exploratory data analysis,feature selecion,Adjustments forClass imbalance etc. view the jupyter noetebook on Github.')
 
