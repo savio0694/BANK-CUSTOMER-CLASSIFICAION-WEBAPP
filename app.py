@@ -159,12 +159,11 @@ st.subheader('The spark program creates he output file in the out folder in S3')
 st.image('https://github.com/savio0694/BANK-CUSTOMER-CLASSIFICATION-WEBAPP/blob/main/images/Capture5.PNG?raw=true')
 
 
-st.text('I will not access the file directly from S3 so as to avoid sharing my aws keys publicly,instead I have downloaded the file.')
 
 st.subheader('Final_data_features')
-st.dataframe(bankdata)
+st.dataframe(bankdata.head(8))
 
-st.header('FINAL RESULT AFTER RUNNING THROUGH  RandomForestClassifier')
+st.subheader('FINAL RESULT AFTER RUNNING THROUGH  RandomForestClassifier')
 
 housing = st.sidebar.radio(
      "Does the customer have a housing loan?",
@@ -203,10 +202,11 @@ MODEL=make_model(bankdata)
 
 def make_frame(VAL,VAL1,age,balance):
       data={
+     "housing_loan" : VAL,
+      "personal_loan" : VAL1,
       "age" : age,
-      "balance":balance,
-      "housing_loan" : VAL,
-      "personal_loan" : VAL1
+      "balance":balance
+      
       }
       df = pd.DataFrame(data,index=[1])
       return df
@@ -224,8 +224,8 @@ PREDICTION=MODEL.predict(df)
 #---FINAL DECISION-------#
 def final_decision(PREDICTION):
     if PREDICTION[0]==0:
-       return " The customer is UNLIKELY to have a TERM DEPOSIT"
+       return " The customer is UNLIKELY to have a term deposit"
     else:
-        return " The customer is LIKELY to have a TERM DEPOSIT"
+        return " The customer is LIKELY to have a term deposit"
 
-st.button(final_decision(PREDICTION))
+st.title(final_decision(PREDICTION))
